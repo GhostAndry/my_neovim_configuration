@@ -1,8 +1,7 @@
-
 # ⚡ Neovim AMOLED Setup
 
-> Un setup super leggero e scuro per Neovim, ispirato a VSCode con stile AMOLED 💀  
-> Include file explorer, completamento automatico, syntax highlight, LSP e terminale integrato.
+> A sleek and ultra-dark Neovim setup, inspired by VSCode and tailored for AMOLED displays 💀  
+> Includes file explorer, smart autocompletion, LSP, integrated terminal, and more.
 
 ---
 
@@ -12,69 +11,88 @@
 
 ---
 
-## 🧪 Funzionalità incluse
+## 🧪 Included Features
 
-✅ Tema **Catppuccin Mocha** (AMOLED)  
-✅ **File explorer** in stile sidebar (nvim-tree)  
-✅ **Autocomplete intelligente** con LSP  
-✅ **Syntax Highlight** via Treesitter  
-✅ **Terminale integrato** toggleabile  
-✅ **Telescope** per ricerca file/funzioni  
+✅ **Catppuccin Mocha** theme (AMOLED-friendly)  
+✅ **Sidebar file explorer** with Java namespace support  
+✅ **Smart autocomplete** via LSP + `nvim-cmp`  
+✅ **Syntax highlighting** powered by Treesitter  
+✅ **Integrated terminal** via `toggleterm`  
+✅ **Fuzzy finder** with Telescope  
 
 ---
 
-## 🧰 Installazione
+## 🧰 Installation
 
-### Metodo 1 – Automatico (consigliato)
-
-Esegui questo comando:
+### Method 1 – Automatic (recommended)
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/GhostAndry/my_neovim_configuration/refs/heads/main/install.sh)
-````
+```
+
+You’ll be prompted to install all components or just specific ones.
+
+### Method 2 – Manual (advanced)
+
+Clone into your Neovim config directory:
+
+```bash
+git clone https://github.com/GhostAndry/my_neovim_configuration ~/.config/nvim
+```
+
+Then manually install dependencies: `ripgrep`, `fzf`, `neovim`, `zsh`, `oh-my-zsh`, `node`, `npm`, `python3`.
 
 ---
 
-## 📦 Plugin inclusi
+## 📦 Included Plugins
 
-| Plugin                                                                  | Funzione                 |
-| ----------------------------------------------------------------------- | ------------------------ |
-| [`lazy.nvim`](https://github.com/folke/lazy.nvim)                       | Plugin manager           |
-| [`nvim-tree`](https://github.com/nvim-tree/nvim-tree.lua)               | File explorer            |
-| [`catppuccin`](https://github.com/catppuccin/nvim)                      | Tema AMOLED              |
-| [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) | Syntax highlight         |
-| [`telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim)    | Ricerca stile Ctrl+P     |
-| [`toggleterm.nvim`](https://github.com/akinsho/toggleterm.nvim)         | Terminale integrato      |
-| [`nvim-cmp`](https://github.com/hrsh7th/nvim-cmp) + LSP                 | Completamento automatico |
-| [`lualine`](https://github.com/nvim-lualine/lualine.nvim)               | Status line carina       |
+| Plugin                                                                  | Description           |
+| ----------------------------------------------------------------------- | --------------------- |
+| [`lazy.nvim`](https://github.com/folke/lazy.nvim)                       | Plugin manager        |
+| [`nvim-tree`](https://github.com/nvim-tree/nvim-tree.lua)               | File explorer sidebar |
+| [`catppuccin`](https://github.com/catppuccin/nvim)                      | AMOLED color theme    |
+| [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) | Syntax highlighting   |
+| [`telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim)    | Fuzzy file finder     |
+| [`toggleterm.nvim`](https://github.com/akinsho/toggleterm.nvim)         | Integrated terminal   |
+| [`nvim-cmp`](https://github.com/hrsh7th/nvim-cmp) + LSP                 | Code autocompletion   |
+| [`lualine`](https://github.com/nvim-lualine/lualine.nvim)               | Status line           |
 
 ---
 
 ## ⌨️ Keybinds
 
-| Shortcut                | Azione                                                |
-| ----------------------- | ----------------------------------------------------- |
-| `Ctrl+Shift+E`          | Toggle file explorer con focus e selezione automatica |
-| `:ToggleTerm`           | Terminale integrato                                   |
-| `:Telescope find_files` | Cerca file                                            |
+| Shortcut                | Action                                            |
+| ----------------------- | ------------------------------------------------- |
+| `Ctrl+Shift+E`          | Toggle file explorer and auto-select current file |
+| `:ToggleTerm`           | Open integrated terminal                          |
+| `:Telescope find_files` | Fuzzy find files (like Ctrl+P in VSCode)          |
 
 ---
 
-## 🖤 Tema usato
+## 🎯 Extra Tools (via install script)
 
-Tema AMOLED fornito da [Catppuccin Mocha](https://github.com/catppuccin/nvim):
+* Full support for **Arch (yay)** and **Debian/Ubuntu (apt)**
+* Optional components: `zsh`, `kitty`, `i3`, `rofi`, `mutt`, `diff-so-fancy`, `emacs`, `fzf`, `ripgrep`
+* Pre-configured dotfiles for Oh My Zsh, Kitty, i3, Rofi, Neomutt
 
 ---
 
-## 🧠 Prossimi passi
+## 🖤 Theme
 
-* Aggiungere keybind per `Ctrl+P` con Telescope
-* Ottimizzare per performance su low-end hardware
-* Sincronizzazione dotfiles via Git
+Powered by the [Catppuccin Mocha](https://github.com/catppuccin/nvim) dark theme – perfect for AMOLED displays.
+
+---
+
+## 🚀 Next Steps
+
+* [ ] Add `Ctrl+P` shortcut with Telescope
+* [ ] Optimize for low-end devices
+* [ ] Sync dotfiles using Git
+* [ ] Optional JDTLS (Java LSP) integration
 
 ---
 
 ## 🤝 Credits
 
-Creato da [Andrea Ronzoni](https://github.com/GhostAndry)
-Ispirato allo stile dark-tech VSCode + riso e violenza 🔥
+Created with 💻 + ☕ by [Andrea Ronzoni](https://github.com/GhostAndry)
+Inspired by dark-tech vibes of VSCode + Neovim + rice & violence 🔥
